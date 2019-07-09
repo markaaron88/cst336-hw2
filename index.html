@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <embed name="superMario"src="music/SuperMarioBros.mp3" loop="false" hidden="true" autostart="true"> 
+ 
 <head>
   <title>Peach Madness</title>
  
@@ -15,50 +15,63 @@
     WHO WILL SAVE PRINCESS PEACH?
     </h1>
     <img src = "img/peach.png" alt = "peach" /> 
-
     
-  <div id="challenger">
-    <h2 id="name">FROM THE EVIL BOWSER! <img src = "img/Bowserbtn.png" alt = "bowser" /> 
-    <input type="text" id="textBox">
-    <button class ="button">Do you dare?</button>
-    </h2>
+  
+    
+   
 </div>
   <hr>
   <main>
-<form name = "myform" action="" method ="post">
+<form id = "gameForm">
+   <img src = "img/Bowserbtn.png" alt = "bowser" /> 
+   <div id="enterName">
+    <h2 id ="name">WHAT DO WE CALL YOU? 
+    <input type="text" id="textBox">
+    <button id="textBoxButton" class="button">DO YOU DARE</button> 
+    </h2>
   
  
+  
+  
   What is peaches favorite color?<br>
-  Pink<input type = "radio" name ="ans1" value = "Pink"><br>
-  Green<input type = "radio" name ="ans1" value = "Green"><br>
-  Black<input type = "radio" name ="ans1" value = "Black"><br>
-  White<input type = "radio" name ="ans1" value = "White"><br>
-  <input type = "button" value = "Submit" onClick="disTxt()">
+  Pink<input type = "radio" name ="ans1" value = "0"><br>
+  Green<input type = "radio" name ="ans1" value = "1"><br>
+  Black<input type = "radio" name ="ans1" value = "2"><br>
+  White<input type = "radio" name ="ans1" value = "3"><br>
+  
+   <h3 id="result1"> </h3>
   <br>  
   <br> 
   
   Before Princess Peach came along, who was Mario's first love interest?<br>
-  Pauline<input type = "radio" name ="ans2" value = "Pink"><br>
-  Zelda<input type = "radio" name ="ans2" value = "Green"><br>
-  Samus Aran<input type = "radio" name ="ans2" value = "Black"><br>
-  Toadette<input type = "radio" name ="ans2" value = "White"><br>
-  <input type = "button" value = "Submit" onClick="disTxt()">
+  Pauline<input type = "radio" name ="ans2" value = "0"><br>
+  Zelda<input type = "radio" name ="ans2" value = "1"><br>
+  Samus Aran<input type = "radio" name ="ans2" value = "2"><br>
+  Toadette<input type = "radio" name ="ans2" value = "3"><br>
+ 
+   <h3 id="result2"> </h3>
+     
+   
   <br>  
   <br>   
 
   How many Nintendo games has Princess Peach been in?<br>
-  10<input type = "radio" name ="ans3" value = "Pink"><br>
-  34<input type = "radio" name ="ans3" value = "Green"><br>
-  61<input type = "radio" name ="ans3" value = "Black"><br>
-  8<input type = "radio" name ="ans3" value = "White"><br>
-  <input type = "button" value = "Submit" onClick="disTxt()">
+  10<input type = "radio" name ="ans3" value = "1"><br>
+  34<input type = "radio" name ="ans3" value = "2"><br>
+  61<input type = "radio" name ="ans3" value = "3"><br>
+  8<input type = "radio" name ="ans3" value = "4"><br>
+   <h3  id="result3"> </h3>
+   
+  
+  <div id = "submit">
+  <button class ="button" id = "submitButton" type="button">Submit</button>
+  <button class ="button" id = "playAgain" type="button">PlayAgain</button>
+  
   <br>  
   <br> 
   </form>  
-
-  </main>
-
-  
+ <div id="showScore">
+</main>
 
       <footer>  
         <hr>
@@ -79,6 +92,6 @@
     <!-- closing body -->
 
 </html>
-  <script src="js/hangman.js"></script>
+  <script src="js/mario.js"></script>
 </body>
 </html>
