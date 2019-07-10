@@ -1,13 +1,33 @@
+$("#complete-error").hide();
+
 $("#submitButton").click(function() {
-  $("#submitButton").hide();
-  $("#playAgain").show();
-  gamePlay();
+  if(checkNull()){
+      $("#submitButton").hide();
+      $("#playAgain").show();
+      gamePlay();
+  }
+  else{
+    $("#complete-error").show();
+  }
+  
 });
 
 $("#textBoxButton").click(function() {
   var userName = document.forms.gameForm.textBox.value;
   document.getElementById('name').innerHTML = "PREPARE TO LOSE " + userName + "!-Bowser";
 });
+
+
+function checkNull(){
+  if (document.forms.gameForm.ans1.value && document.forms.gameForm.ans2.value &&
+     document.forms.gameForm.ans3.value )
+  {
+    return true;
+  } 
+   return false;
+}
+
+
 
 var gameScore = 0;
 
@@ -34,7 +54,6 @@ function gamePlay() {
   }
 
   document.getElementById('showScore').innerHTML = "Your score is " + gameScore + ".";
-
 }
 
 $(".replayBtn").on("click",function(){
