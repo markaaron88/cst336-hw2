@@ -11,12 +11,12 @@ main{
   justify-content:center;
 }
 
-}
-h1 {
-  font-family: 'Bahianita', cursive;
+
+h1{
+  font-family:'Bahianita', cursive;
   font-size: 4em;
   margin-bottom 0px;
-  text-align: center;
+  text-align:center;
 }
 
 h2{
@@ -48,5 +48,14 @@ img {
   cursor: pointer;
 }
 #complete-error{
+  font-family:'Bahianita';
+  font-size: 2em;
   color:#ff0000; 
+}
+#showScore{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  margin-bottom 0px;
+  text-align:center;
+  
 }
