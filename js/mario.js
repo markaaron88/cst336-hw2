@@ -32,7 +32,7 @@ function checkNull(){
 var gameScore = 0;
 
 function gamePlay() {
-  if (document.forms.gameForm.ans1.value == "0") {
+  if (document.forms.gameForm.ans1.value == 0) {
     document.getElementById('result1').innerHTML = "Correct!";
     gameScore++;
   } else {
@@ -46,7 +46,7 @@ function gamePlay() {
     document.getElementById('result2').innerHTML = "PRINCESS PEACH IS MINE!";
   }
 
-  if (document.forms.gameForm.ans3.value == 4) {
+  if (document.forms.gameForm.ans3.value == 3) {
     document.getElementById('result3').innerHTML = "Correct!";
     gameScore++;
   } else {
